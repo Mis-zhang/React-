@@ -21,6 +21,9 @@ import FormLogin from './pages/form/login'
 import Register from './pages/form/register'
 // 表格
 import BasicTable from './pages/table/basicTable'
+import HighTable from './pages/table/highTable'
+//城市管理
+import City from './pages/city/index'
 
 export default class IRouter extends React.Component {
 
@@ -44,6 +47,8 @@ export default class IRouter extends React.Component {
                 <Route path="/admin/form/login" component={ FormLogin } />
                 <Route path="/admin/form/register" component={ Register } />
                 <Route path="/admin/table/basic" component={ BasicTable } />
+                <Route path="/admin/table/high" component={ HighTable } />
+                <Route path="/admin/city" component={ City } />
                 <Route component={ NoMatch } />
               </Switch>
             </Admin>
