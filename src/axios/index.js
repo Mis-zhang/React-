@@ -39,7 +39,7 @@ export default class Axios {
           loading = document.getElementById('ajaxLoading')
           loading.style.display = 'none'
         }
-        if (response.status === 200) {
+        if (response.status === '200') {
           let res = response.data
           if(res.code === 0) {
             resolve(res)
